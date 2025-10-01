@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  tgi:
+    image: ghcr.io/huggingface/text-generation-inference:latest
+    container_name: tgi
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./models:/models
+    environment:
+      - MODEL_ID=/models/nexa_model
+    restart: unless-stopped
