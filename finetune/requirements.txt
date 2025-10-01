@@ -1,0 +1,8 @@
+transformers>=4.35.0
+peft
+bitsandbytes
+accelerate
+datasets
+sentencepiece
+torch>=2.0.0
+safetensors
