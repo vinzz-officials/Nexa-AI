@@ -1,9 +1,11 @@
 {
   "name": "nexa-web",
+  "private": true,
   "scripts": {
-    "dev": "next dev -p 3000",
-    "build": "next build",
-    "start": "next start"
+    "dev": "next dev web -p 3000",
+    "build": "next build web",
+    "start": "next start web",
+    "vercel-build": "next build web"
   },
   "dependencies": {
     "next": "13.4.0",
